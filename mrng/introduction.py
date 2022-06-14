@@ -1,0 +1,6 @@
+print("Hello python")
+print(1234)
+print("ram","kathmandu",97324)
+print("my name is {}. I am {} years old. I live in {}".format("sophia",23,"beijing"))
+print("Hello there {}".format("How are you"))
+print("hello" + "World" + str(23))

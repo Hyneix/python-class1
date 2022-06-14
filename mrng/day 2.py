@@ -1,0 +1,7 @@
+print('\"mother\"')
+print("\'mother\'")
+print("mother's")
+name = input("Enter your name:")
+address = input("Enter your address:")
+contact = input("Enter your contact number:")
+print(f"My name is: {name} ,address: {address} ,contact: {contact}")
