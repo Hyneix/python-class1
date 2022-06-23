@@ -1,29 +1,27 @@
 import datetime
 
-
-def user_birthday():
-    year = int(input('When is your birthday? [YY] '))
-    month = int(input('When is your birthday? [MM] '))
-    day = int(input('When is your birthday? [DD] '))
-
-    birthday = datetime.datetime(year, month, day)
-    return birthday
-
-
-def calculate_dates(original_date, now):
-    date1 = now
-    date2 = datetime.datetime(now.year, original_date.month, original_date.day)
-    delta = date2 - date1
-    days = int(delta.total_seconds() / 60 / 60 / 24)
-
-    return days
+year = int(input('When is your birthday? [YY] '))
+month = int(input('When is your birthday? [MM] '))
+day = int(input('When is your birthday? [DD] '))
+gog = datetime.datetime.now().date()
+obj = datetime.date(year, month, day)
+lo = obj - gog
+goal = lo
+print(goal)
+print(gog)
+print(obj)
 
 
-def show_info(self):
-    pass
-
-
-bd = user_birthday()
-now = datetime.datetime.now()
-c = calculate_dates(bd, now)
-print(c)
+# jobs = [
+#     {'id': 1, 'title': 'python developer', 'created_at': '2022-06-10', 'expire': '2022-06-25'},
+#     {'id': 1, 'title': 'php developer', 'created_at': '2022-05-10', 'expire': '2022-07-25'},
+#     {'id': 1, 'title': 'django developer', 'created_at': '2022-04-10', 'expire': '2022-05-25'},
+# ]
+# for i in range(3):
+#     g = jobs[i]['created_at']
+#     b = jobs[i]['expire']
+#     print(g)
+#     print(b)
+#     nie = int(b[6]) - int(g[6])
+#     k = (int(b[8]) * 10 + int(b[9])) - (int(g[8]) * 10 + int(g[9]))
+#     print(f'''The time left for your job to expire is {nie} months and {k} days.''')
