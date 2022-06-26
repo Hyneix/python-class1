@@ -24,11 +24,12 @@ class name:
 
     def __int__(self, fname, age):
         self.fname = fname
+        self.age = age
 
     def speak(self):
-        print(f'My name is {self.fname}.')
+        print(f'My name is {self.fname}. I am {self.age} years old.')
 
 
 obj = name()
-obj.__int__('Ram',25)
+obj.__int__('Ram', 25)
 obj.speak()
